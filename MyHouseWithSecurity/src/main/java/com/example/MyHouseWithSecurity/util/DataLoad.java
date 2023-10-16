@@ -3,13 +3,12 @@ package com.example.MyHouseWithSecurity.util;
 import com.example.MyHouseWithSecurity.model.authmodel.Role;
 import com.example.MyHouseWithSecurity.model.authmodel.User;
 import com.example.MyHouseWithSecurity.repository.RoleRepository;
-import com.example.MyHouseWithSecurity.repository.UseraRepository;
+import com.example.MyHouseWithSecurity.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
-import javax.management.relation.RoleUnresolved;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +16,7 @@ import java.util.List;
 public class DataLoad implements ApplicationRunner {
 
     @Autowired
-    private UseraRepository userRepository;
+    private UserRepository userRepository;
 
     @Autowired
     private RoleRepository roleRepository;
